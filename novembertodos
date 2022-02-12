@@ -1,0 +1,2268 @@
+[Christmas]
+-After school, go for full Arch Linux install, tiling window managers and status bar 
+-jailbreak one of the iphones laying around
+-NAS for self and family 
+
+[car] 
+# tire air up
+# AC not always cold 
+# noisy alot of the time, maybe motor mount 
+# cabin & engine air filters 
+# transmission fluid and car serviced
+
+[school]
+battery over RAM 	
+# chegg subscription 
+# update USM password exp 14th 
+MAT 169 (Cal 3), 412 Intro to AI, 306 Operating Systems 
+301 Environment Science Elective starts in October  
+331 & 317 only in Spring  	
+
+16 GB RAM for virtualization after battery 
+Logitech Bluetooth Keyboard with Touchpad 
+
+[hobby]
+android notepad app yellow bkg, everything you'd want 
+
+<!> Microsoft Charge remove, ask dad help if needed </!>
+# firefox for Pearson Cal 3 
+
+buy 1 monero lol ($290ish) 
+
+USM 412 has mandatory tracked attendance as much as possible 
+# car service @ Shook's | Sept 6th call 3rd  
+
+[HW]
+CSC 412 Homework is in exercises: 
+aima.cs.berkeley.edu/contents.html 
+
+Cal 3 on convergence/divergence test you're basically proving by the < or > sign that you chose the right comparison series to reference. it's > on one, and < if proving other 
+you're finding the space between series that are so similar in a way that their future is either convergent/divergent depending on which you're trying to prove 
+
+greater than 0 but less than infinity 
+[!] the nth derivative of x is the name for the formula we come up with that generates the pattern for f(x) and its derivatives f', f'',f''',f'''',et c
+
+what if you made youtube channel as hobby
+
+Suffix Tree data structure 
+
+AMD Ryzen 5 1600 $130ish 
+
+conda config --set auto_activate_base false
+gcc source.c -o test.out
+
+C programming you can do in eclipse too 
+https://programmer.help/blogs/linux-project-kernel-data-structures.html
+
+really love AppImages for portable non-persistant OS on a USB Drive, you can just stick them on the side persistent partition, then when you boot the OS on the USB, you simple double click the AppImage files from there.
+ 
+Snipping tool is Shift+PrintScrn 
+
+video with scissors and paper that got longer 
+download anbox since already running anaconda lol 
+could use andbox for google lens pic to text stuff 
+
+jailbreak one of the iphones laying around
+
+p-series expansion: series (e)^(-1/x^3) for https://www.wolframalpha.com/input/?i=series+%28e%29%5E%28-1%2Fx%5E3%29
+
+here for C shell proto school verified: /home/justin/Documents/clones/OSC10e/ch3, 
+
+1) edit simple.c 
+2) gcc -o ./justinprogram simple.c 
+3) ./justinprogram 
+4) pray 
+#########################################################
+conda config --set auto_activate_base false
+newpipe, 10.24 don't upgrade to .13 
+#########################################################
+
+gcc -pthread -o term term.c
+
+GPU is capped at 80w, you can confirm this by running a GPU intensive program and entering: nvidia-smi -q -d PERFORMANCE nvidia-smi -q -d POWER
+
+xinput list, to disable xinput float <id>, 
+to enable xinput reattach <id> <master> 
+
+to display NVIDIA driver: sudo lshw -c display 
+
+"nobody in this world can tell me what to think, but I think everybody has a lesson to teach me."
+
+<the primitive abstraction fills the same void, but is it 1 you want?> 
+
+if you tinker with Unity, only think about making something you'd wanna play 
+
+could make a graphical .c app to execute the shell command for screen brightness, have the app in menu libre and pin to task bar
+
+Nier Automata 
+
+xfce4-panel -q && GTK_DEBUG=interactive xfce4-panel
+ 
+[XFCE Screen Tearing Fix]
+disable xfwm compositor: WinManagerTweaks, Compositor, Uncheck 
+disable xfce panel: xfce4-panel -q 
+sudo nvidia-settings, display config -> Force Composition Pipeline (*not* Full)
+enable compton: /usr/bin/compton --backend glx --paint-on-overlay --vsync opengl-swc
+can even do without compton, not sure what's best tbh 
+
+system-d not grub 
+[*BOOT TEXT*] sudo kernelstub --delete-options "quiet splash"
+
+*xfce-effects* 
+picom --config /home/justin/.config/picom/picom.conf
+
+great green color: #59aa98
+
+'youth cinema'
+
+[current-brightness]
+xrandr --verbose | awk '/ connected /{print $1}/Brightness:/{print $2}'
+[connected-display]
+xrandr | grep -w connected  | awk -F'[ ]' '{print $1}'
+
+we need better compression still 
+
+[Pass linux command to args0 of java program]
+java solve.java `iwconfig > wifistuff` 
+[to get current brightness]
+xrandr --verbose | awk '/ connected awk/{print $1}/Brightness:/{print $2}'
+
+parsing xrandr for displays (note DP(0-4) are universal identifiers) 
+'[Launch with arguments]
+javac solve.java
+
+java solve `xrandr --verbose | awk '/ connected /{}/Brightness:/{print $2}'` `xrandr | grep -w connected  | awk -F'[ ]' '{print $1}'`
+
+[pretty-output]
+sudo systemctl status libvirtd.service
+
+[change-kernels-pop]
+sudo kernel-install add <kernel version> <path-to-vmlinuz> <path-to-initrd>
+
+//Bash floating point values
+sum=$(echo "scale=2; "$a"+"$b| bc -l) #scale defines number of decimals
+
+Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.
+ - Antoine de Saint-Exupery
+
+good link: https://www.reddit.com/r/leaves/comments/bntwia/should_i_leave_or_is_weed_a_valid_way_of_treating/
+
+fixed sudo-only bug: 
+sudo apt install policykit-1-gnome
+reboot
+
+/home/justin/eclipse-workspace/NewCardGame/src/deckofcardstest
+
+"Evil cannot create, it can only corrupt." - JRR Tolkien.
+
+To X-forward a terminal over ssh: do `ssh pi@<ip address> -Y`, then on the Raspberry Pi type `lxterminal`. You also don't need to do this if you're okay with coding over the SSH PTY.
+
+UEFI is short for Unified Extensible Firmware Interface that offers users a faster, sleeker experience. But before we get too deep into UEFI, it's first important to understand what came before it: BIOS. Note: Newer PCs that already have UEFI might still call it the BIOS to avoid confusing consumers.
+================================================================
+
+Tuesday February 30th 
+
+
+Monday February 29th
+
+
+Sunday February 28th
+
+Memorial Appt close, March
+
+Saturday February 26th
+
+
+Friday February 25th
+
+
+Thursday February 24th
+
+
+Wednesday February 23rd
+
+
+Tuesday February 22nd
+
+
+Monday February 21st
+
+
+Sunday February 20th
+
+
+Saturday February 19th
+
+
+Friday February 18th
+
+
+Thursday February 17th
+
+
+Wednesday February 16th
+
+need to pick up Adderall
+
+Tuesday February 15th
+
+
+Monday February 14th
+
+
+Sunday February 13th
+
+new coil
+CSC 413 do attendance on videos in background
+VNC Rpi Lite   
+remodel the room for easier PI access 	
+bluetooth keyboard maybe 
+# SSH on Pi with GUI is done by enabling X-Forwarding (see above)
+# mention to dad about new car tag 
+
+Saturday February 12th
+
+audio: https://www.reddit.com/r/raspberry_pi/comments/hb1wew/pulseaudio_leading_to_no_audio_output_on_hdmi/
+
+What helped for me (after above tips failed) was to re-enable booting up the Desktop GUI (raspi-config option S5). After rebooting once, WLAN came up fine. I once logged into the desktop to check everything, then used rapsi-config again to set it back to text console and after next reboot WLAN still worked.
+booker
+it's okay to not be okay
+
+Friday February 11th
+
+# dishes
+# walk/feed booker 
+
+Thursday February 10th
+
+# java programming
+# dishes
+# pick up Booker 
+# clean room 
+# mention to dad about new car tag 
+
+Wednesday February 9th
+ 	
+# appt w/ Ben today 2:30
+# shower
+# dishes
+//remember the more different it gets is not a bad thing
+
+Tuesday February 8th
+
+# fixed sudo-only bug 
+# a fun flight simulator just to glide around in https://www.youtube.com/watch?v=lCulq9J0Y9E
+# dishes
+# trashbag in room	
+	
+Monday February 7th 
+
+# shower
+# *review quiz* today HIS 375 
+# dishes
+
+Sunday February 6th
+ 
+consider Windows 145+GB partitioned to 1 TB drive (its worth it) 
+# shower
+# call walgreens for trazadone & lithium
+# bring booker back later	
+# laundry if you can but its all good
+# dishes later
+
+*review quiz* tomorrow HIS 375
+consider matt's grass-cutting job at nanas 
+
+Saturday February 5thf
+
+bath 
+# make pizza
+# take it easy
+# make tea  
+# walk booker, change water, feed later  
+
+Friday February 4th 
+
+# dentist appt 
+# bank with dad fix microsoft 
+# charge FM 
+# double shoppe 
+# text vincent
+
+Thursday February 3rd
+ 
+# nana's for dinner  
+
+Wednesday February 2nd
+
+remember all the good things that come: energy, clarity, socialibility 
+clean car (maybe)
+# text josh about Linear Programming 
+# shower
+# dishes
+# Ozark tv show for nighttime 
+
+Tuesday February 1st
+
+# make tea
+# could even make backend brightness controls 
+# change trashbag out 
+# bash for brightness controls 
+# submit java array project thing due 
+# dishes
+
+Monday January 31st
+
+# find affordable cable for 2.5 SSD to USB-A (rpi for AndroidTV, bkps nosound)
+# Response Paper due-mercantilism 
+# install chromium
+# dishes
+# clean room
+# xfce get boot text
+# fix xfce panel fonts/icons, user now appears 
+
+Sunday January 30th 
+
+*bad* *idea* 5.16 Kernel generic and then maybe xanmod 5.16 
+Qemu instead of virtual-box, can easily pass thru video cards 
+
+Saturday January 29th 
+
+try to start rpi-sd card clone to 2.5 SSD 
+	
+Friday January 28th
+
+# apply for usm covid relief 
+# walk booker
+# dishes
+feed booker
+look at mercantilism stuff 	 
+
+Thursday January 27th
+
+# do covid relief thing money 
+will feel good to write outline for response paper 
+text mr ben for reschedule 
+
+Wednesday January 26th
+
+go to walgreens
+get Windows 145+GB partitioned to 1 TB drive (its worth it) 
+zoom meeting tmrw 9:45 
+# shower/shave 
+# dishes
+ 
+## Java Heart Rate due  
+
+Tuesday January 25th 
+
+laundry  	 
+picom for authentication menu to be fully opaque
+# gnome-style menu  
+# dishes
+# 317 Java Heart Rates and Truck/Vehicle submit 	 
+//i really should see Ben (usm)	 
+
+Monday January 24th 
+
+# dishes 
+# fixed picom blurring on conky & lowered strength 
+# make tea 
+  
+Sunday January 23rd	
+ 
+# persistent boot text for pop os 
+# Walgreens for adhd meds
+# parking pass, *again* 
+# panel plugin for favorites (janky output)
+# xfce weather plugin for panel
+
+
+rofi: https://www.youtube.com/watch?v=vztMbO_Ssa0
+look into Activies panel for xfce
+RGB: how on the earth to get windows bootable virtual **dont know if it even boots now** 
+
+Saturday January 22nd  
+
+# python email script
+
+Friday January 21st 
+
+# take trashbag out
+# walk booker
+# make tea
+# dishes
+# pick booker up 
+
+Thursday January 20th 
+
+chromium can be good-boy browser
+# shower
+# dishes
+# dentist appt 2 PM 
+
+Wednesday January 19th 
+ 
+find affordable cable for 2.5 SSD to USB-A (rpi for AndroidTV, bkps nosound)
+# xfce green accent colors
+# xfce fix screen tearing 
+# ask dad for Chegg subscription kde plasma
+# dishes
+# store clothes
+# for 317 Java, transfer old backups of *edit* [all] old school files
+need to upload remaining online somewhere on *dedicated* disk  
+
+Tuesday January 18th 
+
+
+The problem is that gnome-shell needs to be able to associate the window with the .desktop file. In applications that don't use the GtkApplication API (i.e. most non-GNOME applications) this is done by matching the WM_CLASS of the window with the corresponding .desktop file. So you either have to change the name of your .desktop file to match the WM_CLASS of the application windows or you have to specify a StartupWMClass key in your .desktop file that contains the WM_CLASS that should be matched to this .desktop file. You can find a window's WM_CLASS using xprop and then clicking on the window. It is the second entry in the list. Otherwise gnome-shell uses the icon specified by the window itself, which is probably the low resolution icon you are seeing.
+ 
+# chegg, 	 
+# setup wifi printer, 
+# print emails, 
+# canvas
+
+
+Monday January 17th 
+
+
+<!!kind of hold your breathe with mouth open and feel it start> 
+<try>dont think breathe in, think relax, bc when you pull from chest the diaphragm doesn't extend 
+
+follow up by gasp or something, careful not to suck on inhale or blow on exhale   
+
+Maybe try taking a smaller hit and building up your tolerance to larger hits. We all have to start somewhere. Alternatively, remember you are inhaling the air in the bong when you are filling it with smoke. That air is still there when you take your bong hit. What I like to do when I'm smoking larger bongs is to light up and fill the chamber. Then I exhale to get rid of the air in my lungs, before taking the hit. It's important to remember that part of why a bong is so potent is that you are creating a vacuum that forces the smoke in the lungs. So when you take the hit, you first need to recreate that vacuum before inhaling. Hope this helps
+
+
+Sunday January 16th
+
+# shower
+# feed and walk booker
+# bring booker back 
+# got the GTK colors working in XFCE
+
+xfce4-panel -q && GTK_DEBUG=interactive xfce4-panel
+
+Saturday January 15th
+
+minds, parler, and rumble 
+
+Friday January 14th 
+
+transfer Mint-X icons from Thinkpad for xfce 
+
+Thursday January 13th 
+
+
+Wednesday January 12th  
+
+
+Tuesday January 11th 
+
+find red mutagens, later mutagenator
+# shower	 
+# get Zoloft
+# pick Booker up 
+
+Monday January 10th 
+
+# w3 need to do the Tofu contract for alchemy stuff 
+# need to craft all alchemy stuff 
+# steel sword needs to be toussaint knight steel sword  
+# watch this before NG+ https://www.youtube.com/watch?v=2k4rnRr89jo
+
+# shower
+# dishes
+# get gas
+# vincent
+;;need to pick up zoloft 
+
+Sunday January 9th 
+
+# shower
+# bring booker back 
+# schedule advisement appt 
+# eat breakfast
+# change trashbag out 
+# do dishes
+
+Saturday January 8th  
+
+# make tea
+# laundry 
+# get new china with booker
+# walk booker 
+# feed booker
+	
+Friday January 7th 
+ 
+
+Thursday January 6th 
+
+# Nvidia force composition pipeline (not full) 
+
+gamemoderun %command% 
+boot into xanmod
+install gamemode
+check NVIDIA command to use only GPU  
+steam checkup 	
+run lutris w. steam active for *wine* checkup 
+reboot again 
+might need to get new proton if prev doesnt work 
+
+later:
+delete previous users  
+cinnamon (maybe see if previous is there)
+
+Wednesday January 5th 
+
+
+Tuesday January 4th
+
+
+Monday January 3rd 
+
+# Riverside Dental by 11:30  
+
+Sunday January 2nd 
+
+# shower
+# beat toad prince
+# unload and store clothes
+# clean out bottom drawer
+# eat good
+
+Saturday January 1st 
+
+# shower
+# load and unload laundry 
+# change trashbag in room 
+
+Friday December 31st 
+
+# shower
+# pick Booker up 
+# walk booker, change water
+# feed booker
+
+Thursday December 30th 
+
+# :D removed Microsoft Charges
+# shower
+# dentist appointment 
+# open up & fix laptop speakers
+ 
+Wednesday December 29th 
+
+# shower
+# Ridgeway appt 
+
+Tuesday December 28th
+
+# shower
+# need to withdraw $80 for savings
+# nana's for chair and maybe fan 
+# should have DisplayPort -> HDMI Converter, plug USB end into TV for power 
+ *i think i need to enable Force Full Composition Pipeline for TV*
+ 
+Monday December 27th 
+    
+//dishes
+# shower
+# trash
+# beat Imerlith
+
+Sunday December 26th 	
+	 
+I had the same issue with my Maven pro tablet. It eventually got to the point i could barely hear it even with my ear next to speaker. I initially tried master reset but nothing changed. I removed the back and found that my speaker was a little dusty but had metal shavings beld magnetically all over the front of the speacker. wiped it clean with a soft dry towel and now they work like new again.
+# shower
+# church with family
+# fixed Thinkpad X220 keyboard
+# tinkered with pop accent colors, GTK.css
+
+automount drive on boot https://www.techrepublic.com/article/how-to-properly-automount-a-drive-in-ubuntu-linux/ 
+
+skyrim mods, difficulty and graphical 
+	https://www.youtube.com/watch?v=pVwuRAUKPVQ
+
+Saturday December 25th	 
+
+# try installing new 1TB M.2 SSD 
+# clean room, fold new clothes
+# shower
+
+Friday December 24th 
+
+# shower
+# put up clothes
+# walk and feed booker
+# change trashbag out
+//dishes
+
+Thursday December 23rd
+
+# shower
+# dishes
+Vbox maybe consider .iso Windows SSD  
+netflix You 
+ 
+Wednesday December 22nd 
+
+# start taking Omeprazole at night :) 
+# redownload updated BotW w/ DLC & Updates
+# shower
+# try configuring Cemu
+# make tea
+# dishes
+
+Tuesday December 21st 
+
+# shower
+# dishes	
+# need to pick up RX's (Omeprazole too)
+# soon ask Brent help w. smart light
+DL Breath of the Wild for GC Emulation (Cemu IIR)
+
+Monday December 20th 
+
+# shower	
+# dishes
+# display cable: https://www.amazon.com/dp/B06XTYKLNJ?ref=ppx_pop_mob_ap_share&th=1
+
+Sunday December 19th 
+
+//<RPI Xbox controller w. BT> to auto pair just hold the power on button on controller and wait 
+# shower 
+# will help alot having way to watch S2 Witcher 3   
+DWM menu or something like ctrl + tab for top menu options, i like 
+# ask Brent about Nana's netflix acct  
+  		
+Saturday December 18th 
+
+# shower
+# list of clothes for mom
+# finally downloaded an offline YT vid  
+
+Friday December 17th 
+
+# shower 
+# dishes
+# make tea
+# need to pick booker up 
+# shop for clothes 
+exercise really helped me yesterday, not long 
+transparency <bkp b4> https://www.reddit.com/r/pop_os/comments/obhxhs/2104_cosmic_dock_transparent/ 
+
+Thursday December 16th 
+ 
+# download Pop OS update before bed 
+# need to return textbooks 
+# shower
+# dishes
+# get clothes/boxes out of car
+# ran Unity code, installed dotnet SDK for C# in VS
+
+Wednesday December 15th
+
+# need to mention to Dad about Ridgeway dosage increase
+# change trashbag out 
+# shower
+# dishes
+# ben appt at 2PM 
+
+Tuesday December 14th 
+
+# shower
+# dishes
+
+steamlink on raspberry pi alternate OS 
+   , maybe can stream to pi's steam and have it output on TV  
+     would GPU be picked up 
+
+Monday December 13th
+
+# install Witcher 3
+# get vape juice
+# make tea 
+# grab bundle of gatorades when stopping by nanas
+# bring pink longsleeve for nana to maybe patch up
+# shower
+# dishes  
+
+Sunday December 12th 
+
+# shower  
+# dishes
+# do Canvas survey
+# download Unity Hub, maybe for FPS or something  
+# Witcher 3 temp discount $9.99, need to do today  
+need to pick up Omeprazole
+;;cal 3 atleast get all 0's gone :)
+;;need to submit HW 5 CSC 306
+//new fave color: #40BF9	
+//openRGB & emulation capabilities  
+ 
+Saturday December 11th 
+
+# shower
+# cancel Chegg 	
+# submit HW 4 CSC 412
+# dont forget bring SSD to nanas to transfer  
+
+Friday December 10th 
+
+# upgraded vbox w/ guests, USB, & sharing  
+# lutris works, installed Hollow Knight 
+# shower
+# dishes 
+# nanas to download Witcher 3 on papa PC/thinkpad 
+;;cal 3 do 14.3 before 14.2, might count more as % of total complete
+new sitting spot right side of couch, mouse on seat
+
+Thursday December 9th 
+
+# cal 3 14.1 
+# cal 3 13.5  
+# shower 
+# dishes
+need to get gas somehow (maybe chance mal. deposit Friday morning) 
+could easily extend bed back a
+
+Wednesday December  8th 
+
+# shower
+# dishes
+# charge vape  
+
+Tuesday December 7th 
+
+*forgot to take Zoloft 
+# final exam is at 7PM this time 
+# dishes
+# shower
+# memorial video call 
+# vincent
+	  
+Monday December 6th 
+
+;;need to learn Foci and stuff from test 2 
+;;*extended Dec 14*Cal 3 MyLab and Test 
+# fixed DS3 contr. unplug mouse, save DS3 config in Steam B. Menu
+# shower
+# dishes
+# make tea
+# change trashbag out 
+
+Sunday December 5th
+
+;;*extended* 14th//nighttime google docs HW4
+# shower
+//dishes 
+# submit report 412 AI PA1 or HW4    
+
+Saturday December 4th
+
+# shower
+;;412 PA1 
+google doc template of HW4
+
+Friday December 3rd 
+
+
+Thursday December 2nd 
+
+
+Wednesday December 1st 
+
+
+Tuesday November 30th
+
+cal 3 test super soon 
+
+Monday November 29th 
+
+# wanna withdraw $80 cash
+# shower
+# dishes
+ESC Test 3A Today
+distract yourself
+maybe email Mr Ladner or not, standby 
+
+check temp for keyboard cover 
+linux unlock RTX card https://www.youtube.com/watch?v=0tL4y5Gmol8
+gonna do Pop OS since its NVIDIA. <manjaro bkp> 
+
+Sunday November 28th 
+
+<412 can update PA2 and makeup PA1>  
+<cal 3 last test Dec 7th>
+<semester almost over>
+412 PA2  
+
+Saturday November 27th
+ 
+# shower
+# walk booker 
+# setup christmas tree
+# math tinker 
+gonna do Pop OS since its NVIDIA 
+CSC 412 attendance due tuesday 
+
+Friday November 26th 
+
+PA2 412 read paper in bath0
+# shower
+# feed booker 
+  
+Thursday November 25th
+
+# txt 412 pa3 back, about setup environment 
+# cal 3 13.2 more problems :) 
+# shower
+# text group me back
+# malmaws for thanksgiving 
+;;cal 3 tactic: work all the provided help q's, skip others 
+
+Wednesday November 24th 
+
+;;txt 412 pa3 back, about setup environment 
+;;cal 3 13.2
+# shower
+# dishes
+# laundry / all 
+# make tea
+# colton 
+
+Tuesday November 23rd
+
+# submit PA2 306 
+# dishes
+# text Soundra back 
+
+Monday November 22nd 
+
+# shower
+# dishes
+# finish Cal 3 13.1 
+306 PA2 rough draft do 
+ask matthew how to fold futon back 
+
+Sunday November 21st 
+
+nighttime PA2 and PA3 group
+-felt good staying on schoolwork most of day
+-stopped kratom today, saved $ and feel better
+# cal 3 daytime, did alot of 13.1 
+# charge flowermate 
+# bring booker back
+# shower 
+# laundry
+<keep doing school on this laptop if needed>
+<cal 3 last test Dec 7th>
+<semester almost over> 
+
+Saturday November 20th 
+
+# colton
+# walgreens Rx refill
+# start GroupMe
+# shower
+# dishes
+# feed booker
+# walk booker 
+;;306 PA2 extended  
+
+Friday November 19th 
+
+# ordered new laptop (Ryzen 7 w/ GTX 3050TI 16GB RAM  
+# ESC quiz today. "do not need your datasheet, but be sure to do the Quiz"
+# shower 
+# dishes
+
+Thursday November 18th 
+
+# pick booker up
+# shower
+# ESC Test 2B Today
+dishes
+# reply to 306 PA3 Inbox msg in canvas  
+# gcc -pthread -o term term.c
+
+Wednesday November 17th 
+
+# text groupme back PA3 
+# shower	
+# dishes
+# ben appt @ 2PM
+# cal 3 did some hw
+# no matter what keep going
+cal 3 sometimes get part wrong and then enter the question after as the 'chegg <search query>' 
+ex: find the X:  (say cant find this) 
+	(*after trying X)
+		Do blah blah blah <-- Copy this shiz 
+
+Tuesday November 16th 
+
+# shower
+# dishes
+# vincent
+# charge flowermate
+# cal 3 12.3 
+# go to bank for savings
+# ESC made 96 on Test 2A
+
+Monday November 15th 
+
+# dishes
+# ESC quiz today
+412 PA1 submit something 
+# print a* algorithm in class files  
+https://www.youtube.com/watch?v=eSOJ3ARN5FM 
+
+Sunday Novemeber 14th 
+
+# shower
+# dishes
+# eat 
+# submit HW4 306
+# nanas for wifi
+# bring booker back 
+maybe text groupme 
+ESC quiz tomorrow 
+backup home dir soon on old HDD or something soon 
+
+Saturday Novemeber 13th 
+
+open windows a little
+306 HW4 / AI Code 
+# shower
+# dishes
+# laundry
+# trashbag in room
+
+groupme CSC 412 asap 
+go back and read group me, noting stuff down  
+make the groupme part of you	  
+
+Friday Novemeber 12th 
+
+;;cal 3 12.3  
+;;306 HW4 due Sunday 
+# 412 PA1 after 
+# shower
+# dishes 
+# text colton/lydia or someone else 
+
+Thursday Novemeber 11th 
+
+# eat before taking med
+# shower
+# dishes
+# eating at nanas tonight
+;;cal 3 12.2/3 
+
+Wednesday Novemeber 10th 
+
+# shower
+# dishes
+# submit PA1 report 
+# get kratom
+
+Tuesday Novemeber 9th
+
+# PA1 try to finish up, found good code 
+# need to eat daily before taking ad.
+# shower 
+# dishes 
+# vincent
+# setup cups on linux 
+
+Monday Novemeber 8th
+
+;;pipe for proj https://www.youtube.com/watch?v=6xbLgZpOBi8
+# shower
+# dishes
+# bring booker back 
+# tinker PA1, do good bit tonight  
+;;cal 3  
+
+Sunday November 7th 
+
+# shower 
+# change room trashbag
+# charge FM
+dishes 
+open() c code https://www.youtube.com/watch?v=5fnVr-zH-SE 
+# read what worked 
+
+Saturday November 6th 
+
+##wahha snap windows of chegg code and blank code with me ##writing it how i would 
+# shower
+# pick car up 
+# get gas 
+# bring booker back 
+# walk booker 
+
+Friday November 5th 
+
+copy chegg code functions over 
+# download BF1 vids (still need)  		
+# cal 3 11.2 did some problems 
+# pick Booker up
+# drop car off at NTB  
+# dishes 
+
+find context for open https://man7.org/linux/man-pages/man2/open.2.html
+
+Thursday November 4th
+
+# bash script on startup to disable internal keyboard 
+# compiled good test code for PA1
+# ESC Test 1B today, canvas quiz
+# shower
+# dishes
+# laundry 
+# vincent 
+# buy lighter 
+
+Wednesday November 3rd 
+
+# shower
+# make tea
+# dishes cc 
+# ask for $10 transfer for Chegg
+start on PA1 306, need that finished to start on 412 PA1 
+ESC test tomorrow  
+
+Tuesday November 2nd
+
+# polar graph and parametric graph on TI89
+# shower
+# dishes
+# cal 3 Test 2 
+
+Monday November 1st
+
+# shower 
+# dishes
+# Ben clinic appt @ 2:30 
+# ESC 301 Test 1A Today (1B on 4th) 
+# study Cal 3 for test 
+
+Cal 3 the area enclosed is asking which degrees is theta swinging to get us a tasty integral for the graphed r=3cos(0), how to graph vid  
+Cal 3 study notes 14, 19, and 26 (should have grasp of everything else but checkup) 
+tomorrow Cal 3 test 2 
+
+Sunday October 31st 
+
+# shower
+# kratom
+# join 412 PA3 group on Canvas
+# submit HW3 306 Due  
+# set alarm for everyday 
+tomorrow ESC 301 Test 1A
+cal 3 MyLab due Tuesday  
+
+-412 AI PA1 Search due Nov 10th 
+-contact group members sometime this week 
+
+Saturday October 30th 
+
+# shower
+# vincent
+# watch 412 AI videos for attendance
+# tomorrow 412 AI attendance due  
+
+Friday October 29th
+
+# shower
+# dishes
+# feed booker
+# cal 3 finish 12.1 :D 
+
+Thursday October 28th 
+
+PA1 
+# shower
+# trashbag in car
+# make tea 
+# family birthday party at 6
+
+Wednesday October 27th
+
+# submit HW3
+# vincent	
+# laundry 
+# shower
+# dishes 
+ 
+Tuesday October 26th
+
+tomorrow 412 HW3 due
+# make tea 
+# cal 3 12.1 tinker
+# HW3 AI do some problems 
+# dishes
+# shower
+
+Monday October 25th   
+
+priority for 412 now, HW3 and PA1 Search 
+# shower
+# ridgeway appt 
+# drop car off at NTB 
+# dishes
+# pick up car
+
+Sunday October 24th 
+
+HW3 tinker
+# cal 3 tinker
+# shower
+# join 412 Groupme :)
+# dishes 
+# trashbag in room
+# good cal 3 vid https://www.youtube.com/watch?v=eLoeMv0PpyY
+
+Saturday October 23rd 
+
+# shower
+# get car tires aired up  
+ 
+Friday October 22nd 
+
+PA1 look tinker or HW3
+# cal 3 mylab tinker (100% on 11.2) 
+# air tires up  
+# pick Booker up 
+# feed booker
+# shower
+# dishes
+
+linux fork is more like jekyll and hyde than child and parent since based on same instance of a pid_t 
+ba$h: ps -a (for pid processes, seeing forks, childs, etc 
+
+Thursday October 21st
+
+# PA1 look tinker or HW3
+# try reading Cal 3 teacher notes
+# bought new device  
+# cal 3 tinker 
+# shower
+# dishes (need detergent) 
+# double shoppe 
+
+Wednesday October 20th
+
+# PA1 look at, notes etc   
+# did good on the group, +1 person is in mine 
+# HW3 tinker
+# cal 3 power series practice
+# make tea
+# text dad for card, pickup RX
+# vincent pickup
+# laundry
+# call for Adderall RX 
+# shower
+# dishes
+
+Tuesday October 19th
+
+cal 3 look at old hw 
+# make noted.HW3 CSC 306 
+# power series marathon
+# shower
+# dishes
+# need to try eating atleast once 
+
+maybe start groupme https://usm.instructure.com/conversations#filter=type=inbox
+# link to dad: https://www.youtube.com/watch?v=CqzZaPOTDL8
+
+Monday October 18th 
+
+# 306 PA1 Priority 
+# do cal 3 11.4 
+# make tea 
+# appt 2:30 clinic gulfport 
+# shower
+# dishes
+	
+Sunday October 17th
+
+# submit HW2 AI 
+# vincent meet 
+# tomorrow appt 2:30 clinic
+# work on HW2 412 AI  
+# shower  
+# can use spare iphone for camscanner upload hw2 drawings 
+# look at printed teachers notes cal 3 Oct 5th
+PAs are [[*redacted* they're 15% of grade]]75% grade, so higher priority 
+this guy for cal 3 https://www.youtube.com/user/dhill262/search?query=power%20series
+
+Saturday October 16th 
+
+# camscanner on the iphone if possible, need icloud 
+# tinker with cal 3 
+# setup new table in room
+# shower if possible 
+# survive 
+
+Friday October 15th 
+
+# nighttime hw2 412
+# memorial physical at 2  
+# get gas and give card back 
+# shower
+# dishes
+# tinker cal 3 
+# pick booker up
+# feed booker 
+
+Thursday October 14th
+
+# dishes
+# shower 
+# priority call memorial about appt 2PM
+# cal 3 11.4 do problems
+# need to get 412 AI online format (search and ctrl+f)  
+
+Wednesday October 13th 
+
+# shower
+# 412 HW2 tinker and at night 
+# cal 3 start new 11.4, finish good bit 
+# look over ESC 301 'Living in Environment' 
+# dishes	
+# put tea on 
+
+Tuesday October 12th 
+ 
+# 412 HW2 priority, tempDoc is made 
+# finish cal III hw 11.3 (95%) 
+# shower
+# put bag outside with stuff  
+# get savings
+# dishes
+# text vincent 
+# get kratom  
+
+Monday October 11th 
+
+# (folder) cal 3 checkup on teacher notes in files
+# hw2 306 submit   
+# shower
+# dishes
+# unload laundry
+# isopropyl for device clean
+# change room trash out   
+
+Sunday October 10th
+
+# laundry  
+# almost finish Cal 3 10.3 
+# shower
+# tomorrow CSC 306 HW2 is due 
+
+Saturday October 9th
+
+# watch the sopranos, yt watch later 
+
+Friday October 8th
+  
+# shower
+# pick booker up
+# 306 hw2 tinker  
+
+Thursday October 7th
+
+# memorial fasting appt 9:15
+# shower
+# dishes 
+# finish code/terminal screenshots for hw2 306 
+# tinker with math, 11.3 have 50% complete 
+
+Wednesday October 6th
+
+# set clock alarm on something else 7:45 AM 
+# get card for appt tomorrow
+# dishes
+# shower
+# appt with ben 2PM 
+# call memorial to cancel thurs 9am appt verify
+# text vincent
+
+Tuesday October 5th
+
+# shower
+# cal 3 learning, 90% on 11.2 
+# dishes
+# chegg payment -$14.95 
+# finish SOAR tasks
+
+Monday October 4th 
+
+# cal 3 did good bit of questions
+# shower
+# dishes 
+# make tea
+# probs gonna need kratom 
+# buy hempwick if getting kratom  
+# need chegg amount in bal :) 
+
+Sunday October 3rd
+
+# submitted AI HW1 both 
+# laundry
+# bring booker back 
+# shower
+											
+Saturday October 2nd
+
+# drove to new china		
+# walk booker
+# feed booker
+# finish AI hw1 doc 
+
+Friday October 1st 
+
+# pick booker up 
+# AI HW1 code roughly finished
+CSC 306 video lec attendance priority
+# shower
+# dishes 
+
+Thursday September 30th 
+
+# shower
+# AI python programming
+# answer some AI hw1 questions  
+# dishes
+
+Wednesday September 29th
+
+# make tea 
+# dishes
+# did cal 3 hw1
+# did AI python code 
+
+Tuesday September 28th
+
+food in the microwave 
+maybe use colab to run the code 
+test_agents4e.py 
+# make lunch 
+# cal 3 finish 11.1
+# shower
+# dishes 
+
+Monday September 27th
+
+# dishes
+# shower
+# vincent
+# cal 3 did alot of problems
+# relax a little 
+
+Sunday September 26th
+
+[extended] CSC 412 AI hw1 look for easy q's 
+# night ask to leave out $40 from savings
+# transfer phone music to Pi 
+# check Chegg payment date &[Oct 5th]   
+# text mr ben back 
+# need to make tea
+# get kratom   
+# taylor series hw  
+
+Saturday September 25th
+
+# shower
+# change room trash out
+# move vape to car 	
+
+Friday September 24th 
+
+# shower
+# pick booker up
+# laundry wash/dry
+# dishes 
+
+Thursday September 23rd
+
+# Cal 3 Test #1 ;D
+# ridgeway 10 AM 
+# shower 
+
+Wednesday September 22nd	 
+
+# gvim more often than nano sometimes  
+# make tea  
+# appt @ 10 AM 
+# shower
+# dishes 
+# took trash out
+# cleaned bookers bowl 
+
+Tuesday September 21st
+
+# set alarm nighttime for therapy appt 10 AM tmrw
+# shower
+# drive to buy office supplies 	
+# bring booker back to nanas 
+# dishes 
+		
+Monday September 20th 
+
+# finish and submit hw1 Operating Systems
+# wireless charger for phone
+# practice integrals  
+# transfer timeshift backup to external 
+# do dishes 
+# take shower
+# cal 3 teacher lec videos 	
+
+Sunday September 19th 
+
+hold nose prior 
+
+if the stack goes down and the heap goes up into libraries it means you've run out of memory 
+[Temp] https://www.chegg.com/homework-help/questions-and-answers/1-multiprogramming-time-sharing-environment-several-users-share-system-simultaneously-situ-q26212636
+[/]
+
+# hw1 Operating systems :) 
+# drive booker back home 
+# Cal 3 
+# shower
+# linux $home dir backup
+# drive for Add. refill   
+
+Saturday September 18th 
+
+
+Friday September 17th 
+
+# shower
+# pick booker up
+# get gas
+# dishes
+# unload laundry 
+
+Thursday September 16th 
+
+# shower
+# dishes
+# drove to get calculator 
+# Cal 3 did alot of practice 
+
+Wednesday September 15th 
+
+csc 306 hw1 3 problems
+# change trash in room  
+# dishes
+# shower 
+# writing formulas that generate series [a_n=a1+(n-1)D] 
+
+Tuesday September 14th 
+
+# make lunch
+# cal 3 10.8 
+# shower
+# dishes
+
+Monday September 13th 
+
+CSC 306 HW1 priority for week
+# dishes 
+# laundry
+# cal 3 10.7 finished :)
+# cal 3 [10.3] Question 12 to go back to 
+
+Sunday September 12th
+
+# shower
+# fixed mupen64 & epsxe controls
+# transfer Sopranos, The Wire to external storage 
+# mention cabin 
+CSC 306 HW1 priority for week  
+tiling window manager	 
+
+Saturday September 11th 
+
+# shower		
+# got supplies 
+# drove to new china 
+cal 3 n+1 for an existing n+1 is just n+2 
+
+Friday September 10th	 
+	
+# pick booker up	 	
+# cal 3 read what wrote at top
+# find any charger chord for calculator 
+
+Thursday September 9th 
+
+# shower
+# dishes
+# hw of choosing / tinker 
+# later order TI-89 calculator
+
+Wednesday September 8th 
+
+# shower
+# dishes
+# appt with Ben at 9
+ti84 calculator emulate wine 
+
+Tuesday September 7th 
+
+# shower
+# treadmill 1 mile
+# dishes 
+# make lunch
+# tinker CSC 306 hw1 
+set alarm for appt tomorrow 9am 
+
+Monday September 6th 
+
+# pick car up 
+# shower
+# did alot of Cal 3 work  
+CSC 412/306 videos. resume AI@13:20 intro, lec1
+
+Sunday September 5th
+
+# find shaving cream for shower	
+# do some CSC 306 hw1 //chegg ans in folder  
+# text ben
+# shower
+# attempt Cal 3, got some done 
+
+Saturday September 4th 
+
+# survive
+# med refill night
+# drive with mom for ladder 
+
+Friday September 3rd 
+
+# remind dad text Shook for car
+# memorial vyvanse meet
+# pick booker up
+# shower
+# feed booker 3:00
+# bring car to Shooks at 6, get wallet out
+# load up old couches, unload new    
+
+Thursday September 2nd
+
+charge phone overnight
+# ask for $ transfer for appt  
+# shower
+# fold laundry
+# change trashbag in room  
+# setup lamp in room 
+# find micro usb
+
+Wednesday September 1st 
+
+# shower 
+# text vincent
+Cooks Portable Warehouses: Pre-owned buildings available 
+(228) 328-4455 (Gulfport)
+(228) 244-9856 (Ocean Springs) 
+https://cookstuff.com/portable-buildings-gulfport-ms/
+  
+Tuesday August 31st 
+
+# shower
+# Cal 3 hw3 did 12 problems 
+
+Monday August 30th 
+
+# shower
+# went with dad home depot  
+# set reminders on canvas due dates
+# cleaned/scrubbed bathtub
+
+Sunday August 29th 
+
+# did alot of Cal 3 problems, 1&2 almost done  
+# turn dishwasher on 
+# go with parents to get paint
+# make lunch
+# shower 
+# bring booker back or not 
+
+Saturday August 28th 
+
+# shower
+# make lunch
+# did some cal 3 HW pt.2 /learn graphing sequences
+# feed booker   
+# laundry wash/dry 
+# med refill add Zoloft
+# Ixtapas with brent&matt   
+
+Friday August 27th 
+
+# make tea 
+# found ipod for camera
+# pick booker up 
+# ridgeway appt
+# dishes
+# feed booker
+# looked up cabins
+
+Thursday August 26th 
+
+# do cal 3 problems, did alot
+# clinic appt 1:30-2:30 
+# bring nana check for papa, ask bag of sugar  
+# shower 
+# dishes 
+
+Wednesday August 25th
+
+# do some Cal 3
+# make tea (tried x2 bags), dont do stevia   
+# dishes 
+# change trash
+# shower
+# laundry
+# drive to nanas for tshirt, soda  
+
+Tuesday August 24th
+
+# shower
+# treadmill 1 mile  
+# leave box, spray inside bookbag
+# make lunch
+# dishes 
+# USM Cal 3 class at 5:45 	
+# bring notebook for class    
+
+Monday August 23rd	 
+
+# shower
+# buy Cal 3 Pearson and CSC 306 ebook (web& phone)  
+# treadmill 1 mile 	
+# dishes, # wash booker bowl 
+# make lunch
+# drive to get gas  
+# watch Cal 3 videos 
+# sprayed car dirt off  
+
+Sunday August 22nd 
+
+# shower
+# change trashbag in room 
+# make tea
+# make lunch   
+# bring booker back
+# check canvas for 412 start date 
+
+Saturday August 21st 
+
+# shower
+# cleaned yard, filled dirt
+# went to eat with parents
+
+Friday August 20th 
+
+# drove to withdraw $100 savings ($500 TTL) 
+# drove to buy energy drink mix 
+# feed booker 
+# shower
+# dishes
+ 
+Thursday August 19th 
+
+# pick up USM textbooks
+# purchased parking permit USM 
+# treadmill mile :)
+# shower 
+# laundry
+# dishes 	
+
+Wednesday August 18th 
+
+# order and pick up adderall rx 
+# make lunch 	
+# shower
+# dishes 
+
+Tuesday August 17th 
+
+# call memorial for vyvanse appt | Sep. 3 @ 10:20 AM  
+# make lunch 
+# dishes 
+# shower
+# treadmill
+
+Monday August 16th 
+
+# make tea 
+# take trash out 
+# made lunch 
+# dishes
+# shower
+# treadmill mile  
+# text about car service @ Shook's | Sept 6th call 3rd 
+
+Sunday August 15th 
+
+# bring booker back
+# cleaned and stocked shower 
+# mention car tune up, trans fluid, noise inspection 
+# make lunch 
+# shower
+# dishes 
+
+Saturday August 14th 
+	
+# shower	
+# change room trashbag
+	
+Friday August 13th
+
+# 11 AM therapy meeting
+# text nana before meeting abt pickup 
+# drove to buy dinner
+# pick Booker up after  
+# dishes 
+# shower 
+
+Thursday August 12th 
+
+# drive for lithium levels and DT
+# laundry unloaded  
+# dishes
+# logged into Canvas USM 
+# learned Java static meaning   
+# treadmill for a mile  
+# shower 
+
+Wednesday August 11th 
+
+# fish oil and x2 Lithium nighttime 
+# coded good web prototype 
+# call memorial about Vyvanse potential 
+# tell dad about cancellation notice USM 
+# take x2 Lithium today
+# shower
+# make pizza
+# treadmill 
+
+Tuesday August 10th 	
+
+# take x3 Lithium and fish oil tonight
+# AA meeting at 6:30 
+# unload/load dishes 
+# make tea 
+# made lunch 
+# setup Pi in living room, swapped SSD 
+# shower
+# treadmill mile  
+
+Monday August 9th 
+ 
+need to call Memorial for appt
+# USM updated password before exp
+# drove to get gas 
+# need to call USM for FA appeal 
+# dishes unload and load 
+# treadmill  
+# shower/brush 
+# make pizza at 12:30 
+
+Sunday August 8th 
+
+# tried to make hashbrowns, wrote guide 
+# throw printer box trash out
+# swapped lamps in room
+# bring booker back 
+# make pizza for lunch
+# dishes  
+# shower/shave/brush     
+
+Saturday August 7th 
+
+# put clothes up 
+# feed booker 
+
+Friday August 6th 
+
+# configured CUPS 
+# set wifi printer up 
+# bank to withdraw $100 savings
+# made tea
+# laundry 
+# shower 	  
+# dishes
+# picked booker up 
+
+Thursday August 5th
+	
+# AA meeting w/ Nick, Ixtapas & meeting 
+# read and learned web dev
+# put printer in room setup tomorrow	
+# walked mile on treadmill
+# shower
+# dishes 	
+
+Wednesday August 4th 
+
+# tonight take fish oil
+# change trash 
+# dishes 
+# therapist appointment 3 PM 
+# eye contact appointment 10 AM
+# walked mile treadmill 
+# shower 
+
+Tuesday August 3rd 
+	
+# laundry
+# hayleigh advisement 1 PM Phone
+# call Memorial for Q about vyvanse rx
+# dishes 
+# remind dad for trazadone refill   
+# shower 
+# treadmill
+
+Monday August 2nd 
+
+# ask parents for $10 gas
+# ridgeway appointment 3 PM, leave 2:15  
+# walk a mile
+# shower
+# take booker back 
+# dishes 
+
+Sunday August 1st
+
+# change trash out in room 
+# pay ebay one-time payment thing
+# drove to get vape juice	
+# make pizza at 12:30 
+# shower 	
+
+Saturday July 31 
+
+# walked booker 
+# put meds out for refill   
+# make pizza at 12:30 
+# shower  
+
+Friday July 30 
+
+# torrent season 3 the sopranos 
+# tonight take fish oil 
+# walked booker twice 
+# make tea
+# take trash out  
+# modified web code, learned more 
+# load/unload dishes
+# make pizza at 12:30 
+# pick booker up  	
+# shower 
+
+Thursday July 29
+
+# learned alot of web dev
+# laundry
+# dishes 
+# walked a mile
+# shower	
+# need to eat more than yesterday
+
+Wednesday July 28
+	
+# therapist meeting 3 PM 
+# shower
+# dishes 
+# walked a mile
+
+Tuesday July 27
+	
+# read about web dev 
+# dishes 
+# jot down resentment paper 	
+# walked a mile	
+# shower 
+# made tea
+# cleaned up kitchen 	
+
+Monday July 26
+
+# washed booker's bowl
+# bought groceries
+# changed trash out 
+# unload dishes
+# bring USM appeal letter to school 
+# treadmill 
+# shower 
+
+Sunday July 25
+ 
+# put new insurance cards in car w. case 	
+# USM appeals paper fill out  
+# shower
+# laundry  
+# take booker back   
+# dishes
+# download Sopranos tonight 
+
+Saturday July 24	
+
+# take fish oil tonight 
+# got groceries w. dad  	
+# withdraw $100 cash 
+# change room trashbag out 
+# took house trash bag out 
+# walked booker 
+
+Friday July 23
+
+# dishes
+# made tea 
+# changed trash out 
+# found network printer to order 
+# walk booker 	
+# fed booker 		
+# washed car dirt off   
+# dad and i call ATT, me give dad access both 
+# pick booker up 	
+# showered
+
+Thursday July 22   
+
+# schedule USM advisement | Tue Aug 3rd 1:00 PM (Phone)
+# called USM to reset 2 Factor, got email access 
+# tire pressure finish	
+# brought trash cans back from road 
+# walked mile 
+# showered
+# dishes 
+# check mail later 
+# drove for a bit 
+
+Wednesday July 21
+
+tire pressure finish // tackle later 
+write down pharmacy card #'s in phone
+ 
+# later unload dishwasher 
+# dishes done 
+# text dad about burnhams vyvanse  
+# call eye clinic / drive there if needed|10AM Aug 4th 
+# showered
+# walked mile 
+
+Tuesday July 20
+
+# ask dad where tire pressure guage is at 
+# ask mom for premier number to call 
+# hop in the shower  
+# try Takeda number again | success 
+# call Takeda number // hit voicemail // try later 
+# touched up java app, added clr/del buttons 
+# call again for eye appt since closed 
+# checked USM application, its good 
+# walked a mile
+
+Monday July 19 
+ 
+# call for eye contact appointment (228) 762-1525 # closed 
+# did laundry
+# fixed java calculator app 
+# walked on treadmill 
+
+usm student email; call to del prev phone numbers
+tire pressure, use dad's machine
+
+Sunday July 18 
+
+# air freshener
+# text nana about geico ID cards		 	
+# wipe inside car dust  		
+# miracously fix trunk to be flat
+# coded a great calculator app java 
+use login creds microsoft acc fix  
+ 	
+Saturday July 17 
+
+# removed charge for nana on ebay 
+# washed car 
+# haircut Sports Clips
+# pay USM application fee $20  
+# windshield fluid  
+
+Fri July 16
+
+# applied USM Fall 21
+# canceled NordVPN 
+# dishes 
+# laundry 
+# trash cans from road 
+# re-organized room, added a clock 
+
+########################################################
+## 		    Resumed  Adderall		 	##
+########################################################
+
+Sun June 27th 
+
+Sat June 26th 
+
+# showered 
+# laundry
+nighttime download 127 hours 
+
+Fri June 25th 
+    
+# cooked grill cheese     
+# checked mail     
+# got booker   
+# made tea 
+# walked and fed booker 	
+# added new tp rolls for bathroom 
+  
+Thurs June 24th 
+ 
+# dishes 
+# shower 
+	 
+Wed June 23rd
+
+# shower
+# called Ridgeway office // it was faxed  
+
+Tues June 22nd 
+
+# dishes 
+# shower 
+# made tea 
+
+Mon June 21st 
+
+# did dishes 
+# changed trashbag out 
+# drove to dr office for vyvanse form drop-off
+
+Sun June 20th 
+
+
+Sat June 19th 
+
+
+Fri June 18th
+ 	
+# picked Booker up 
+# did dishes 
+# bath and hair washed
+# walked booker 
+
+Thur June 17th	
+
+# bath 			
+# laundry 
+# dishes
+	
+Wed June 16th
+
+# walked booker 
+# changed trash
+# did dishes
+# bath or shower for hair 
+# transfer S02 to 500 GB M.2 
+pick up outside 
+
+Tues June 15th
+
+# fixed mint sources and virtual box DEP errors
+# shower  
+# maybe coil for ecig, esp if falling back 
+
+Mon June 14th
+
+# showered
+# bring booker back, grab facemasks, 3 monsters 
+# vyvanse paper at Ridgeway's office
+# :)cleaned car, replaced trash bags, wiped console 
+# kratom 
+# ask dad if he text Shermy 
+# import all Lost S01 to 256 SD to prevent freezing 
+    
+Sun June 13th
+
+# imported Lost S1 for mom 	
+# got booker dog food 
+# took shower 
+ 	
+Sat June 12th
+
+# got up earlier than ever, it was great 
+# notified group can't make wedding 
+# finally backed up android TV img, gonna take a day 
+# showered
+# did laundry 
+# took out trash in room and replaced bag 
+
+Fri June 11th 
+
+# took a shower 	
+# did dishes 
+# swapped RAM to 8 GB 
+# modified thinkpad bios for 1600 mhz RAM increase 
+# updated new thinkpad bios 
+# drove for food 
+# got booker
+            who is a woofer 
+###############################################################
+###############################################################
+
+
+Monday May 3rd
+
+ Call Dr office again 
+
+Sunday May 2nd 
+
+
+Saturday May 1st 
+ 
+ shave
+
+Friday April 30th
+
+# called dr office, no callback yet 
+# picked up booker 
+# trashbag in room swapped
+# dishes washed
+# Blood levels checked  
+# showered
+
+Thursday April 29th
+
+# drove to doctors appointment 
+# ears cleaned 
+# shower 
+
+Wednesday April 28th
+
+# dishes 
+# shower and shampoo
+
+Tuesday April 27th 
+
+# went with dad to get food 
+# took out trash 
+# dishes 
+
+Monday April 26th 
+
+# drive for 6mg 150 ml e-juice
+# shower 
+# take out M.2 SSD from old Laptop 
+
+Sunday April 25th
+
+
+Saturday April 24th
+
+  BIOS Update x220 
+
+Friday April 23rd
+
+## appointment at 1 i think 
+
+Thursday April 22nd
+
+# bath/shampoo 
+# took trash out 
+
+Wednesday April 21st
+
+# got booker 
+# bath/shampoo 
+
+Tuesday April 20th 
+
+# bath / shampoo 
+  brents book read   
+# get screwdrivers set side
+
+Monday April 19th 
+
+# took trash out in bathroom 
+# toilet paper for bathrooms 
+# cleaned and febrezed room
+# at&t guy  
+  bath and shave  
+   
+Sunday April 18th 
+
+# bath / shampoo 
+# trash bag in room 
+# withdraw $200 cash savings 
+
+Saturday April 17th 
+
+# shower
+# booker 
+ 
+Friday April 16th 
+
+# downloaded s03 
+# smart lights 
+# ridgeway appt 
+
+Thursday April 15th
+
+#  went out with parents 
+#  therapy session 
+#  discontinue choc milk to lose weight 
+#  get monsters as request 
+#  clothes will look better in drawer
+#  gaming setup 
+#  nighttime download crap s03 
+
+Wednesday April 14th 
+
+# shave
+# should autorenew # re-order nordvpn 
+# text ms michelle for reschedule, maybe tomorrow
+# dolphin emulator config 
+
+Tuesday April 13th 
+
+#service guy 
+#dishes  
+pcsx2 input configuration  
+
+Monday April 12th 
+
+#shower  
+#cancel chegg subscription
+#elinks #text based web browser lol
+
+Sunday April 11th 
+
+#shower 
+#shave 
+#write down windshield fluid for car 
+#car wash write down 
+ 
+Saturday April 10th 
+
+# download unity
+# put up clothes 
+# maybe get booker later 
+nightime download game for steam 
+
+
+
+
+# finish SOAR tasks
