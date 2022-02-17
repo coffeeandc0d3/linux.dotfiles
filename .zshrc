@@ -72,18 +72,24 @@ bindkey '^e' edit-command-line
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 
 # justin aliases here: 
+
+alias mm="neofetch | grep Memory"
+alias sw="ssh justin@192.168.1.209 -Y"
+alias py="python3"
+alias iwconfig="sudo iwconfig"
+alias sublime="/opt/sublime_text/sublime_text"
 alias FF="sudo xdg-open ."
 alias scc="java solve `xrandr --verbose | awk '/ connected /{}/Brightness:/{print $2}'` `xrandr | grep -w connected  | awk -F'[ ]' '{print $1}'`"
 alias ff="xdg-open "
 alias FF="bash /home/justin/favorites-directory.sh"
 alias prt="xfce4-panel -q"
 alias pst="xfce4-panel "
-alias se="python3 Desktop/automation/sendmessage.py Desktop/automation/filemsg "
+alias se="python3 sendmessage.py /home/pi/Desktop/automation/filemsg"
 # alias se="ls * "
 alias btop="bpytop"
 alias bt="acpi -V"
 alias fd="fdfind -H"
-alias img="eog %U"
+alias img="gpicview"
 alias c="clear"
 alias neo="neofetch"
 alias l="ls"
@@ -92,10 +98,11 @@ alias hm="cd /home/justin"
 alias x="exit"
 alias disk="baobab"
 alias vm="cat /proc/sys/vm/swappiness"
-alias f="nano"
+alias f="nano "
 alias b="cd .."
 alias d="cd"
-alias tp="sensors | grep Tctl"
+alias tp="vcgencmd measure_temp"
+#alias tp="sensors | grep Tctl"
 #alias tp="watch -n 2 sensors"
 #alias tp="cat /sys/class/thermal/thermal_zone0/temp"
 alias minecraft="/opt/minecraft-launcher/minecraft-launcher"
@@ -106,7 +113,6 @@ alias sc="xrandr --output 0x1c1 --brightness"
 alias jot="gedit "Desktop/automation/novembertodos" "Desktop/automation/words""
 alias gcube="dolphin-emu"
 alias www="w3m"
-alias img="eog %U "
 #alias pdf="evince %U"
 #alias pdf="libreoffice --draw %U"
 alias hs="history"
@@ -122,11 +128,19 @@ alias k="nohup "
 alias eclipse="sudo /opt/eclipse/eclipse"
 alias xf="xfce4-terminal"
 alias t="terminator"
-alias logout="xfce4-session-logout"
+alias logout="lxde-logout"
+#alias logout="xfce4-session-logout"
 alias sl="xrandr --verbose | awk '/ connected /{}/Brightness:/{print $2}'"
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+PATH=$PATH:.
 
 
-# Keep at Bottom
+
+###! Keep at Bottom
 export DOTNET_ROOT=$HOME/dotnet
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/pi/dotnet:.
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
