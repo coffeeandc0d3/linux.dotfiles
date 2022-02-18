@@ -25,7 +25,7 @@
   <!-- when followMouse is enabled, and a window is given focus by moving the
        mouse into it, also raise the window -->
   <placement>
-    <policy>UnderMouse</policy>
+    <policy>Smart</policy>
     <!-- 'Smart' or 'UnderMouse' -->
     <center>yes</center>
     <!-- whether to place windows in the center of the free area found or
@@ -152,12 +152,9 @@
      they are maximized, or when they are initially placed.
      Many programs reserve space automatically, but you can use this in other
      cases. -->
-  <margins>
-    <top>5</top>uie=c
-    <bottom>5</bottom>
-    <left>2</left>
-    <right>2</right>
-  </margins>
+  <margins><top>5</top>uie=c
+    
+        <bottom>5</bottom><left>2</left><right>2</right></margins>
   <dock>
     <position>TopLeft</position>
     <!-- (Top|Bottom)(Left|Right|)|Top|Bottom|Left|Right|Floating -->
@@ -267,15 +264,22 @@
         <menu>client-menu</menu>
       </action>
     </keybind>
+
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
-      <action name="NextWindow"/>
-      <allDesktops>yes</allDesktops>
+      <action name="NextWindow">
+	  <allDesktops>yes</allDesktops>
+          <raise>yes</raise>
+      </action>
     </keybind>
-    <keybind key="A-Tab">
-      <action name="PreviousWindow"/>
-      <allDesktops>yes</allDesktops>
-    </keybind>
+
+  <keybind key="A-Tab">
+      <action name="PreviousWindow">
+          <allDesktops>yes</allDesktops>
+          <raise>yes</raise>
+      </action>
+  </keybind>
+
     <!-- Keybindings for running applications -->
     <keybind key="W-e">
       <action name="Execute">
@@ -327,7 +331,20 @@
     <keybind key="A-F1">
       <action name="Close"/>
     </keybind>
-    <!-- Window snapping code we are adding -->
+
+<!--justin super + down to minimize  -->
+   <keybind key="A-Down">
+      <action name="MoveResizeTo">
+        <width>20%</width>
+        <height>10%</height>
+        <x>0%</x>
+        <y>90%</y>
+      </action>
+   </keybind>
+
+<!--end justin configs -->
+  
+  <!-- Window snapping code we are adding -->
     <keybind key="Alt-Left">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
@@ -384,11 +401,15 @@
       <action name="Execute">
         <command>xfce4-terminal</command>
       </action>
+      <action name="Raise"/>
+      <action name="Focus"/>
     </keybind>
     <keybind key="C-S-t">
       <action name="Execute">
         <command>xfce4-terminal</command>
       </action>
+	 <action name="Raise"/>
+         <action name="Focus"/>
     </keybind>
   </keyboard>
   <mouse>
@@ -707,5 +728,10 @@
     <manageDesktops>yes</manageDesktops>
   </menu>
   <!-- show the manage desktops section in the client-list-(combined-)menu -->
-  <applications/>
+<applications>
+  <application class="*">
+    <focus>yes</focus>
+  </application>
+</applications>
+
 </openbox_config>
