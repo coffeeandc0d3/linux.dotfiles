@@ -3,8 +3,8 @@
         Copy the file to $HOME/.config/openbox/ instead. -->
 <openbox_config xmlns="http://openbox.org/3.4/rc">
   <resistance>
-    <strength>10</strength>
-    <screen_edge_strength>16</screen_edge_strength>
+    <strength>6</strength>
+    <screen_edge_strength>5</screen_edge_strength>
   </resistance>
   <focus>
     <focusNew>yes</focusNew>
@@ -30,14 +30,14 @@
     <center>yes</center>
     <!-- whether to place windows in the center of the free area found or
        the top left corner -->
-    <monitor>Primary</monitor>
+    <monitor>Active</monitor>
     <primaryMonitor>Active</primaryMonitor>
   </placement>
   <!-- with Smart placement on a multi-monitor system, try to place new windows
        on: 'Any' - any monitor, 'Mouse' - where the mouse is, 'Active' - where
        the active window is -->
   <theme>
-    <name>Arc-Darkest</name>
+    <name>Matcha-dark-sea</name>
     <titleLayout>CIML</titleLayout>
     <!--       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -51,10 +51,10 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>sans</name>
-      <size>11</size>
+      <name>Sans</name>
+      <size>12</size>
       <!-- font size in points -->
-      <weight>Bold</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
     </font>
@@ -69,12 +69,12 @@
     </font>
     <!-- 'italic' or 'normal' -->
     <font place="MenuHeader">
-      <name>sans</name>
-      <size>10</size>
+      <name>Sans</name>
+      <size>11</size>
       <!-- font size in points -->
-      <weight>normal</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
     </font>
     <!-- 'italic' or 'normal' -->
     <font place="MenuItem">
@@ -96,13 +96,13 @@
     </font>
     <font place="ActiveOnScreenDisplay">
       <name>Sans</name>
-      <size>11</size>
+      <size>12</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveOnScreenDisplay">
       <name>Sans</name>
-      <size>11</size>
+      <size>12</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
@@ -130,7 +130,7 @@
     <name>desktop 1</name>
     <name>desktop 2</name>
     -->
-    <popupTime>875</popupTime>
+    <popupTime>475</popupTime>
   </desktops>
   <!-- The number of milliseconds to show the popup for when switching
        desktops.  Set this to 0 to disable the popup. -->
@@ -152,9 +152,12 @@
      they are maximized, or when they are initially placed.
      Many programs reserve space automatically, but you can use this in other
      cases. -->
-  <margins><top>5</top>uie=c
-    
-        <bottom>5</bottom><left>2</left><right>2</right></margins>
+  <margins>
+    <top>41</top>
+    <bottom>20</bottom>
+    <left>15</left>
+    <right>15</right>
+  </margins>
   <dock>
     <position>TopLeft</position>
     <!-- (Top|Bottom)(Left|Right|)|Top|Bottom|Left|Right|Floating -->
@@ -202,13 +205,13 @@
     </keybind>
     <keybind key="S-A-Left">
       <action name="SendToDesktopLeft">
-        <dialog>no</dialog>
+        <dialog>yes</dialog>
         <wrap>no</wrap>
       </action>
     </keybind>
     <keybind key="S-A-Right">
       <action name="SendToDesktopRight">
-        <dialog>no</dialog>
+        <dialog>yes</dialog>
         <wrap>no</wrap>
       </action>
     </keybind>
@@ -251,7 +254,7 @@
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Keybindings for windows -->
-    <keybind key="A-F4">
+    <keybind key="A-XF86Back">
       <action name="Close"/>
     </keybind>
     <keybind key="A-Escape">
@@ -259,27 +262,51 @@
       <action name="FocusToBottom"/>
       <action name="Unfocus"/>
     </keybind>
-    <keybind key="A-space">
-      <action name="ShowMenu">
-        <menu>client-menu</menu>
+    <!-- justin alt + n for minimize -->
+    <keybind key="A-m">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <width>10%</width>
+        <height>10%</height>
+        <x>0%</x>
+        <y>80%</y>
       </action>
     </keybind>
-
+    <!-- justin top right/bottom left snapping -->
+    <keybind key="C-S-A-Left">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <width>50%</width>
+        <height>50%</height>
+        <x>0%</x>
+        <y>0%</y>
+      </action>
+    </keybind>
+    <!-- justin bottom right snapping -->
+    <keybind key="C-S-A-Right">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <width>50%</width>
+        <height>50%</height>
+        <x>50%</x>
+        <y>50%</y>
+      </action>
+    </keybind>
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
       <action name="NextWindow">
-	  <allDesktops>yes</allDesktops>
-          <raise>yes</raise>
+        <dialog>icons</dialog>
+        <allDesktops>yes</allDesktops>
+        <raise>yes</raise>
       </action>
     </keybind>
-
-  <keybind key="A-Tab">
+    <keybind key="A-Tab">
       <action name="PreviousWindow">
-          <allDesktops>yes</allDesktops>
-          <raise>yes</raise>
+        <dialog>icons</dialog>
+        <allDesktops>yes</allDesktops>
+        <raise>yes</raise>
       </action>
-  </keybind>
-
+    </keybind>
     <!-- Keybindings for running applications -->
     <keybind key="W-e">
       <action name="Execute">
@@ -296,7 +323,7 @@
         <command>pcmanfm --find-files</command>
       </action>
     </keybind>
-    <!-- eybindings for LXPanel -->
+    <!-- Keybindings for LXPanel -->
     <keybind key="W-r">
       <action name="Execute">
         <command>lxpanelctl run</command>
@@ -331,39 +358,35 @@
     <keybind key="A-F1">
       <action name="Close"/>
     </keybind>
-
-<!--justin super + down to minimize  -->
-   <keybind key="A-Down">
+    <!-- justin akt + b to minimize  -->
+    <keybind key="A-B">
       <action name="MoveResizeTo">
         <width>20%</width>
         <height>10%</height>
         <x>0%</x>
         <y>90%</y>
       </action>
-   </keybind>
-
-<!--end justin configs -->
-  
-  <!-- Window snapping code we are adding -->
+    </keybind>
+    <!-- Window snapping code we are adding -->
     <keybind key="Alt-Left">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <width>50%</width>
+        <width>48%</width>
         <height>100%</height>
-        <x>0%</x>
+        <x>1%</x>
         <y>0%</y>
       </action>
     </keybind>
     <keybind key="Alt-Right">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <width>50%</width>
+        <width>49%</width>
         <height>100%</height>
         <x>50%</x>
         <y>0%</y>
       </action>
     </keybind>
-    <keybind key="C-Alt-Down">
+    <keybind key="C-S-Alt-Down">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <width>50%</width>
@@ -382,7 +405,7 @@
       </action>
     </keybind>
     <!-- this is where corner snapping is: -->
-    <keybind key="C-Alt-Up">
+    <keybind key="C-S-Alt-Up">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <width>50%</width>
@@ -399,21 +422,39 @@
     </keybind>
     <keybind key="C-A-t">
       <action name="Execute">
-        <command>xfce4-terminal</command>
+        <command>bash -c "LIBGL_ALWAYS_SOFTWARE=1 /usr/bin/alacritty"</command>
       </action>
       <action name="Raise"/>
       <action name="Focus"/>
     </keybind>
     <keybind key="C-S-t">
       <action name="Execute">
-        <command>xfce4-terminal</command>
+        <command>bash -c "LIBGL_ALWAYS_SOFTWARE=1 /usr/bin/alacritty"</command>
       </action>
-	 <action name="Raise"/>
-         <action name="Focus"/>
+      <action name="Raise"/>
+      <action name="Focus"/>
+    </keybind>
+    <keybind key="C-S-BackSpace">
+      <action name="Execute">
+        <command>bash /home/pi/justin-lib-input</command>
+      </action>
+    </keybind>
+    <!-- justin resize window shortcuts  -->
+    <keybind key="C-Super-Right">
+      <action name="GrowToEdgeEast"/>
+    </keybind>
+    <keybind key="C-Super-Left">
+      <action name="GrowToEdgeWest"/>
+    </keybind>
+    <keybind key="C-Super-Down">
+      <action name="GrowToEdgeSouth"/>
+    </keybind>
+    <keybind key="C-Super-Up">
+      <action name="GrowToEdgeNorth"/>
     </keybind>
   </keyboard>
   <mouse>
-    <dragThreshold>8</dragThreshold>
+    <dragThreshold>10</dragThreshold>
     <!-- number of pixels the mouse must move before a drag begins -->
     <doubleClickTime>200</doubleClickTime>
     <!-- in milliseconds (1000 = 1 second) -->
@@ -480,24 +521,21 @@
         <action name="FocusToBottom"/>
         <action name="Unfocus"/>
       </mousebind>
+    </context>
+    <!-- justin remove shade window on mousewheel scroll  
       <mousebind button="Up" action="Click">
         <action name="Shade"/>
         <action name="FocusToBottom"/>
         <action name="Unfocus"/>
         <action name="Lower"/>
       </mousebind>
+
       <mousebind button="Down" action="Click">
         <action name="Unshade"/>
         <action name="Raise"/>
       </mousebind>
-      <mousebind button="Right" action="Press">
-        <action name="Focus"/>
-        <action name="Raise"/>
-        <action name="ShowMenu">
-          <menu>client-menu</menu>
-        </action>
-      </mousebind>
-    </context>
+     
+      ## end justin -->
     <context name="Top">
       <mousebind button="Left" action="Press">
         <action name="Focus"/>
@@ -728,10 +766,9 @@
     <manageDesktops>yes</manageDesktops>
   </menu>
   <!-- show the manage desktops section in the client-list-(combined-)menu -->
-<applications>
-  <application class="*">
-    <focus>yes</focus>
-  </application>
-</applications>
-
+  <applications>
+    <application class="*">
+      <focus>yes</focus>
+    </application>
+  </applications>
 </openbox_config>
