@@ -1,0 +1,187 @@
+/* @import 'colors.css'; */
+
+@define-color decoration_border_color #2cc99a;
+@define-color decoration_border_color_unfocused #6F5F0C;
+
+/* focused window */
+decoration {
+    border: 2px solid @decoration_border_color;
+    background: @decoration_border_color;
+
+    /* switch colors smoothly with a transition animation */
+    transition: border-color ease-in 0.2s, background-color ease-in 0.2s;
+}
+
+/* unfocused window */
+decoration:backdrop {
+    border-color: @decoration_border_color_unfocused;
+    background-color: @decoration_border_color_unfocused;
+}
+
+/* focused window (server-side rendering hack) */
+.ssd .titlebar {
+    border: 2px solid @decoration_border_color;
+    border-bottom: none;
+
+    /* transition animation does not seem to work with server-side rendering */
+    /* transition: border-color ease-in 0.2s; */
+}
+
+/* unfocused window (server-side rendering hack) */
+.ssd .titlebar:backdrop {
+    border-color: @decoration_border_color_unfocused;
+}
+
+/* remove borders of maximized windows */
+.maximized decoration,
+.ssd.maximized .titlebar {
+    border: none
+}
+
+.xfce4-panel button:checked {
+        color: #ffffff;
+        box-shadow: inset 0 0px #3498db;
+  }
+
+.xfce4-panel button:hover {
+        box-shadow: inset 0 0px #3498db;
+}
+
+.xfce4-panel  #tasklist-5 .horizontal button:checked {
+        box-shadow: inset 0 2px #3498db;
+        background-color: #444E61;
+}
+
+
+.xfce4-panel  #tasklist-5 button:checked {
+        box-shadow: inset 0 2px #3498db;
+}
+
+.xfce4-panel #pulseaudio-button {
+        margin-right: -1px;
+        background-color: #5E81AC;
+        color: #fff;
+}
+
+.xfce4-panel #systray-23 .horizontal {
+        background-color: #39546F;
+   }
+
+.xfce4-panel #systray-23 .horizontal button {
+        margin-left: -1px;
+}
+
+.xfce4-panel #genmon-1  .genmon_valuebutton {
+        background-color: #E06C75;
+        color: #fff;
+}
+
+.xfce4-panel .genmon_value, .genmon_valuebutton {
+        padding: 10px;
+        color: #fff;
+}
+
+.xfce4-panel #genmon-9 .genmon_value {
+        border-radius: 1px;     
+}
+
+.xfce4-panel #genmon-2 .horizontal
+ {
+        background-color: #ce825d;
+}
+
+.xfce4-panel #genmon-7 .horizontal
+{
+        background-color: #444763;
+}
+
+.xfce4-panel #genmon-12 .genmon_valuebutton {
+        background-color: #cd8560;
+}
+
+.xfce4-panel #pager-4 .horizontal #xfce-panel-toggle-button:checked{
+        background-color: #ae5169;
+        color: #FFF;
+}
+
+.xfce4-panel #pager-4 .horizontal{
+        font-family: 'Space Mono';
+        font-weight: Bold;
+        background-color: #7f3e52;
+        color: #ffffff;
+}
+
+
+.xfce4-panel #genmon-17 .horizontal {
+
+        background-color: #8c5172;
+}
+
+.xfce4-panel #genmon-19 .horizontal {
+        border-radius: 1px;
+        background-color: #ce825d;
+}
+
+
+.xfce4-panel #genmon-5 .horizontal {
+        border-radius: 1px;
+        background-color: #444763;
+}
+
+
+.xfce4-panel #genmon-13 .horizontal {
+        border-style: none;
+        background-color: #8d5176;
+}
+
+.xfce4-panel #genmon-6 .horizontal {
+        border-style: none;
+        background-color: #ce825d;
+}
+
+.xfce4-panel #clock-12 label {
+        display: inline-block;
+        margin: -1px;
+        border-style:none;
+        font-weight: Bold;     
+        background-color: #8c5172;
+        color: #fff;
+}
+
+.xfce4-panel #systray-1 .horizontal {
+        margin-left: -1px;
+        border-radius: 1px;
+        background-color: #62568B;     
+   }
+
+
+.xfce4-panel #notification-plugin-10 button {
+
+        background-color: #5E81AC;
+ }
+
+.xfce4-panel #actions-button label {
+        background-color: #5E81AC;
+}
+
+.xfce4-panel #weather-11 .horizontal {
+   margin: -1px;
+   display: inline-block;
+   background-color: #444763;
+}
+
+.nautilus-window placessidebar :selected {background-color: #2db399; }
+
+
+#whiskermenu-button label {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 17px;clock
+    background-color: #455A7F;
+    padding: 5px;
+}
+
+#whiskermenu-button label:hover {
+ color:#fff;
+}
+
