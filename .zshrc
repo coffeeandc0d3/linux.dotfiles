@@ -71,25 +71,43 @@ bindkey '^e' edit-command-line
 [ -f "$HOME/.config/shortcutrc" ] && source "$HOME/.config/shortcutrc"
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 
-# justin aliases here: 
+# justin aliases here:
 
+alias zz="pwd | xclip -rmlastnl -sel c"
+alias csc="colorscript -r"
+alias cmk="g++ -o "
+alias kk="rm nohup.out"
+alias k="bash ./detach.sh "
+alias mkj="javac -d . "
+alias rmr="rm -r"
+alias etcher=" ./Documents/syslogs/balenaEtcher-1.7.7-x64.AppImage"
+alias compress="tar -pczf "
+alias add="~/build/staging-area/append-file "
+alias mk="g++ -o "
+alias gn="bash ./append.sh geany "
+alias mp3="youtube-dl --extract-audio --audio-format mp3 "
+alias read="koreader "
+alias size="sudo du -sh " 
 alias mm="neofetch | grep Memory"
-alias sw="ssh justin@192.168.1.209 -Y"
-alias py="python3"
-alias iwconfig="sudo iwconfig"
-alias sublime="/opt/sublime_text/sublime_text"
-alias FF="sudo xdg-open ."
+alias pp="python3"
+alias sip="bash /home/justin/build/get-IP-address/display-ip.sh"
+alias nee="pfetch"
+alias ss="cd /home/justin/Documents/USM/Spring-22"
+#alias mk="bash /home/justin/build/auto-project.sh"
+alias eees="bash ./eees.sh" 
+alias rc="openbox --reconfigure"
+alias sw="ssh pi@192.168.1.220 -Y"
 alias scc="java solve `xrandr --verbose | awk '/ connected /{}/Brightness:/{print $2}'` `xrandr | grep -w connected  | awk -F'[ ]' '{print $1}'`"
-alias ff="xdg-open "
+alias F="nautilus "
+alias ff="cd Documents/USM/Spring-22"
 alias FF="bash /home/justin/favorites-directory.sh"
 alias prt="xfce4-panel -q"
 alias pst="xfce4-panel "
-alias se="python3 sendmessage.py /home/pi/Desktop/automation/filemsg"
+alias se="python3 Desktop/automation/sendmessage.py Desktop/automation/filemsg "
 # alias se="ls * "
 alias btop="bpytop"
 alias bt="acpi -V"
 alias fd="fdfind -H"
-alias img="gpicview"
 alias c="clear"
 alias neo="neofetch"
 alias l="ls"
@@ -98,21 +116,21 @@ alias hm="cd /home/justin"
 alias x="exit"
 alias disk="baobab"
 alias vm="cat /proc/sys/vm/swappiness"
-alias f="nano "
+alias f="nano"
 alias b="cd .."
 alias d="cd"
-alias tp="vcgencmd measure_temp"
-#alias tp="sensors | grep Tctl"
+alias tp="sensors | grep Tctl"
 #alias tp="watch -n 2 sensors"
 #alias tp="cat /sys/class/thermal/thermal_zone0/temp"
 alias minecraft="/opt/minecraft-launcher/minecraft-launcher"
 alias unity="./Desktop/UnityHub.AppImage"
-alias pdf="evince"
+alias pdf="nohup evince"
 alias jot="gedit "Desktop/automation/novembertodos" "Desktop/automation/words""
 alias sc="xrandr --output 0x1c1 --brightness"
 alias jot="gedit "Desktop/automation/novembertodos" "Desktop/automation/words""
 alias gcube="dolphin-emu"
 alias www="w3m"
+alias img="eog "
 #alias pdf="evince %U"
 #alias pdf="libreoffice --draw %U"
 alias hs="history"
@@ -120,27 +138,20 @@ alias n64="mupen64plus --gfx /usr/lib/x86_64-linux-gnu/mupen64plus/mupen64plus-v
 alias del="rm -r -v"
 alias note="gedit" 
 alias doc="libreoffice --writer"
-alias bat="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
-alias upgrade='sudo apt-get upgrade -y && sudo apt upgrade -y'
-alias update='sudo apt-get update -y && sudo apt update -y'
+alias bb="upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep percentage"
+alias upgrade='sudo apt-get upgrade -y && sudo apt upgrade'
+alias update='sudo apt-get update -y && sudo apt update'
 alias tux="etr"
-alias k="nohup "
 alias eclipse="sudo /opt/eclipse/eclipse"
 alias xf="xfce4-terminal"
 alias t="terminator"
-alias logout="lxde-logout"
-#alias logout="xfce4-session-logout"
+alias logout="xfce4-session-logout"
 alias sl="xrandr --verbose | awk '/ connected /{}/Brightness:/{print $2}'"
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
-PATH=$PATH:.
 
+# justin colorscript on terminal launch:
+#colorscript random
 
-
-###! Keep at Bottom
+# Keep at Bottom
 export DOTNET_ROOT=$HOME/dotnet
-PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/pi/dotnet:.
-
-export NVM_DIR="$HOME/.config/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
