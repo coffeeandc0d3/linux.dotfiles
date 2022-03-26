@@ -73,9 +73,10 @@ bindkey '^e' edit-command-line
 
 # justin aliases here:
 
+alias cf="xsel -b "
 alias zz="pwd | xclip -rmlastnl -sel c"
 alias csc="colorscript -r"
-alias cmk="g++ -o "
+alias mk="g++ -o "
 alias kk="rm nohup.out"
 alias k="bash ./detach.sh "
 alias mkj="javac -d . "
@@ -84,7 +85,7 @@ alias etcher=" ./Documents/syslogs/balenaEtcher-1.7.7-x64.AppImage"
 alias compress="tar -pczf "
 alias add="~/build/staging-area/append-file "
 alias mk="g++ -o "
-alias gn="bash ./append.sh geany "
+alias gn="bash /home/justin/detach.sh geany "
 alias mp3="youtube-dl --extract-audio --audio-format mp3 "
 alias read="koreader "
 alias size="sudo du -sh " 
