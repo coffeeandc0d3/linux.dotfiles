@@ -6,11 +6,10 @@ import smtplib
 import sys
 
 # Important constants.
-FROM_ADDR = 'justin.s9615@gmail.com'
-FROM_PASS = 'Sinnersaved9615!!!'
-FROM_NAME = 'Justin S'
-TO_ADDR = 'justin.s9615@gmail.com'
-#TO_ADDR = 'terryshows71@gmail.com'
+FROM_ADDR = '@'
+FROM_PASS = ''
+FROM_NAME = ''
+TO_ADDR = '@'
 TO_NAME = 'Recipient: '
 SUBJECT = '[Subject]'
 SMTP_HOST = 'smtp.gmail.com'
